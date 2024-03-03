@@ -28,7 +28,15 @@ main { padding-top: 55px; margin: 0% 0% 3% 10% }
 #base-info {
 	display: grid;
 	grid-template-columns: 0fr 1fr;
-	align-items: center
+	align-items: center;
+	grid-gap: 10px;
+	width: 85%;
+}
+@media (max-width: 525px) {
+	#base-info {
+		justify-items: center;
+		grid-template-columns: unset
+	}
 }
 #me-img {
 	max-width: 160px;
