@@ -1,7 +1,7 @@
 :root {
     --branca: #fff;
     --preto: #222;
-    --cinza: #ccc;
+    --cinza: #aaa;
     --cinza-escuro: #bbb;
     --vermelho: #f00;
 }
@@ -19,18 +19,18 @@ nav {
 .nav-link { color: var(--branca); text-decoration: none;  margin: 2.1% }
 .nav-link:hover { color: var(--cinza); text-transform: none }
 
+#pdf-iframe { max-width: 100%; width: 500px }
 #pdf-iframe, #close-warning { display: none }
 #close-warning { display: none; color: var(--vermelho) }
 
 main { padding-top: 55px; margin: 0% 0% 3% 10% }
 
-.topics { display: inline-block; width: 85%; margin-top: 3% }
+.topics { display: inline-block; width: 85% }
 #base-info {
 	display: grid;
 	grid-template-columns: 0fr 1fr;
 	align-items: center;
-	grid-gap: 10px;
-	width: 85%;
+	margin: 3% 7.5%
 }
 @media (max-width: 525px) {
 	#base-info {
@@ -53,8 +53,10 @@ a { margin: 0.5%; text-decoration: none }
 
 .list-group-item, button { margin-bottom: 5px; width: 100% }
 
-.dropdown-menu { --bs-dropdown-min-width: 100%; text-align: center; }
-
+.dropdown-menu { --bs-dropdown-min-width: 100%;
+	text-align: center;
+	background-color: var(--cinza-escuro)
+}
 #icons {
 	justify-content: center;
 	flex-direction: row;
