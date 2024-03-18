@@ -1,14 +1,17 @@
 :root {
-    --branca: #fff;
+    --branco: #eee;
+    --cinza: #bbb;
     --preto: #222;
-    --cinza: #aaa;
-    --cinza-escuro: #bbb;
-    --vermelho: #f00;
+	--ciano: #00f
 }
 body {
-	background-color: var(--cinza);
 	margin: 0px;
-	font-size: 130%
+	display: flex;
+	background-color: var(--preto);
+	min-height: 100vh;
+	font-size: 130%;
+	color: var(--cinza);
+	flex-direction: column
 }
 nav {
 	position: fixed;
@@ -16,50 +19,48 @@ nav {
 	height: 10%;
 	z-index: 1000
 }
-.nav-link { color: var(--branca); text-decoration: none;  margin: 2.1% }
-.nav-link:hover { color: var(--cinza); text-transform: none }
-
-#pdf-iframe { max-width: 100%; width: 500px }
-#pdf-iframe, #close-warning { display: none }
-#close-warning { display: none; color: var(--vermelho) }
-
-main { padding-top: 55px; margin: 0% 0% 3% 10% }
-
-.topics { display: inline-block; width: 85% }
+main { padding-top: 55px;
+	margin: 0% 0% 3% 10%
+}
 #base-info {
 	display: grid;
 	grid-template-columns: 0fr 1fr;
 	align-items: center;
-	margin: 3% 7.5%
+	margin: 3% 40%
 }
-@media (max-width: 525px) {
+@media (max-width: 600px) {
 	#base-info {
 		justify-items: center;
 		grid-template-columns: unset
 	}
 }
+
+h1 { font-size: 200%; }
 #me-img {
-	max-width: 160px;
-	border-radius: 100px;
-	border: 2px solid #989
+	max-width: 200px;
+	border-radius: 45%;
+	border: 2px solid var(--preto)
 }
 #textos, #base-info, .list-group-item, button { margin-left: 5% }
 
+#sobremim { display: none }
+
 span { font-size: 100% }
+.topico { display: inline-block;
+	width: 85%;
+}
+.list-group-item { background-color: var(--cinza) }
 
-.list-group-item { background-color: var(--cinza-escuro) }
+a { margin: 0.5% }
 
-a { margin: 0.5%; text-decoration: none }
-
-.list-group-item, button { margin-bottom: 5px; width: 100% }
-
+.list-group-item, button { margin-bottom: 5px;
+	width: 100%
+}
 .dropdown-menu { --bs-dropdown-min-width: 100%;
-	text-align: center;
-	background-color: var(--cinza-escuro)
+	background-color: var(--cinza)
 }
-#icons {
-	justify-content: center;
-	flex-direction: row;
-	background-color: var(--cinza-escuro)
-}
-.icon { width: 40px; margin-top: 10px }
+.dropdown-menu, footer { text-align: center; }
+footer {
+	margin-top: auto;
+	width: 100% }
+.icon { max-width: 50px }
