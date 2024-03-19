@@ -13,40 +13,29 @@ body {
 	color: var(--cinza);
 	flex-direction: column
 }
-nav {
-	position: fixed;
-	background-color: var(--preto);
-	height: 10%;
-	z-index: 1000
+.navbar { height: 10%;
+	justify-content: space-evenly
 }
-main { padding-top: 55px;
-	margin: 0% 0% 3% 10%
-}
+main { padding-top: 55px; }
 #base-info {
-	display: grid;
-	grid-template-columns: 0fr 1fr;
+	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	margin: 3% 40%
+	justify-content: center;
+	margin-bottom: 10%
 }
-@media (max-width: 600px) {
-	#base-info {
-		justify-items: center;
-		grid-template-columns: unset
-	}
-}
-
 h1 { font-size: 200%; }
 #me-img {
 	max-width: 200px;
 	border-radius: 45%;
 	border: 2px solid var(--preto)
 }
-#textos, #base-info, .list-group-item, button { margin-left: 5% }
+#topico, .dropdown, .list-group-item { margin: 5% }
 
 #sobremim { display: none }
 
 span { font-size: 100% }
-.topico { display: inline-block;
+#topico { display: inline-block;
 	width: 85%;
 }
 .list-group-item { background-color: var(--cinza) }
