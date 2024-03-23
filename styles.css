@@ -9,10 +9,10 @@ body {
 	background-color: var(--preto);
 	min-height: 100vh;
 	font-size: 130%;
-	color: var(--cinza);
+	color: var(--cinza)
 }
 body, #base-info, #sobremim { display: flex }
-body, #sobremim { flex-direction: column; }
+body, #sobremim { flex-direction: column }
 .navbar {  justify-content: space-evenly }
 main { padding-top: 55px; }
 #base-info, #sobremim { flex-wrap: wrap;
