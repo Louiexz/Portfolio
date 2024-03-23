@@ -1,28 +1,29 @@
 :root {
     --branco: #eee;
-    --cinza: #bbb;
+    --cinza: #666666;
     --preto: #222;
 	--ciano: #00f
 }
 body {
 	margin: 0px;
-	display: flex;
 	background-color: var(--preto);
 	min-height: 100vh;
 	font-size: 130%;
 	color: var(--cinza);
-	flex-direction: column
+	flex-direction: column;
+	
 }
+body, #base-info { display: flex }
 .navbar { height: 10%;
 	justify-content: space-evenly
 }
 main { padding-top: 55px; }
 #base-info {
-	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 10%
+	text-align: center;
+	margin: 20px;
 }
 h1 { font-size: 200%; }
 #me-img {
@@ -30,11 +31,11 @@ h1 { font-size: 200%; }
 	border-radius: 45%;
 	border: 2px solid var(--preto)
 }
-#topico, .dropdown, .list-group-item { margin: 5% }
+#topico, .dropdown, .list-group-item { margin: 20px 7%}
 
 #sobremim { display: none }
 
-span { font-size: 100% }
+span { font-size: 100%; align-items: center; align-content: center;}
 #topico { display: inline-block;
 	width: 85%;
 }
