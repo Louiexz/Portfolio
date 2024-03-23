@@ -11,14 +11,15 @@ body {
 	font-size: 130%;
 	color: var(--cinza);
 }
-body, #sobremim { flex-direction: column; }
 body, #base-info, #sobremim { display: flex }
+body, #sobremim { flex-direction: column; }
 .navbar {  justify-content: space-evenly }
 main { padding-top: 55px; }
 #base-info, #sobremim { flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	padding: 5% 20px;
+	padding: 50px 10px;
+	gap: 20px
 }
 #me-img {
 	max-width: 200px;
