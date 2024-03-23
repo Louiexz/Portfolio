@@ -1,55 +1,41 @@
 :root {
     --branco: #eee;
-    --cinza: #bbb;
+    --cinza: #aaa8a8;
     --preto: #222;
 	--ciano: #00f
 }
 body {
 	margin: 0px;
-	display: flex;
 	background-color: var(--preto);
 	min-height: 100vh;
 	font-size: 130%;
 	color: var(--cinza);
-	flex-direction: column
 }
-.navbar { height: 10%;
-	justify-content: space-evenly
-}
+body, #sobremim { flex-direction: column; }
+body, #base-info, #sobremim { display: flex }
+.navbar {  justify-content: space-evenly }
 main { padding-top: 55px; }
-#base-info {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+#base-info, #sobremim { flex-wrap: wrap;
 	justify-content: center;
-	margin-bottom: 10%
+	align-items: center;
+	padding: 5% 20px;
 }
-h1 { font-size: 200%; }
 #me-img {
 	max-width: 200px;
 	border-radius: 45%;
 	border: 2px solid var(--preto)
 }
-#topico, .dropdown, .list-group-item { margin: 5% }
-
-#sobremim { display: none }
-
-span { font-size: 100% }
+h1 { font-size: 200% }
+.sobremim { color: var(--cinza);
+	border-radius: 4px }
+a { text-decoration: none; }
+.sobremim:hover, a:hover { color: var(--branco) }
+#topico, .dropdown, .list-group-item { margin: 20px 7% }
 #topico { display: inline-block;
-	width: 85%;
+	width: 85%
 }
-.list-group-item { background-color: var(--cinza) }
-
-a { margin: 0.5% }
-
-.list-group-item, button { margin-bottom: 5px;
-	width: 100%
-}
-.dropdown-menu { --bs-dropdown-min-width: 100%;
-	background-color: var(--cinza)
-}
-.dropdown-menu, footer { text-align: center; }
-footer {
-	margin-top: auto;
-	width: 100% }
+.list-group-item, button, .dropdown-menu { width: 100% }
+.dropdown-menu, .list-group-item {	background-color: var(--cinza) }
+.dropdown-menu, footer, #base-info, #sobremim { text-align: center }
+footer { margin-top: auto }
 .icon { max-width: 50px }
