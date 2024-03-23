@@ -9,10 +9,10 @@ body {
 	background-color: var(--preto);
 	min-height: 100vh;
 	font-size: 130%;
-	color: var(--cinza)
 }
 body, #base-info, #sobremim { display: flex }
 body, #sobremim { flex-direction: column }
+body, .sobremim { color: var(--cinza) }
 .navbar {  justify-content: space-evenly }
 main { padding-top: 55px; }
 #base-info, #sobremim { flex-wrap: wrap;
@@ -26,16 +26,15 @@ main { padding-top: 55px; }
 	border-radius: 45%;
 	border: 2px solid var(--preto)
 }
-h1 { font-size: 200% }
-.sobremim { color: var(--cinza);
-	border-radius: 4px }
+h1 { font-size: 180% }
+.sobremim {	border-radius: 4px }
 a { text-decoration: none; }
 .sobremim:hover, a:hover { color: var(--branco) }
 #topico, .dropdown, .list-group-item { margin: 20px 5% }
 #topico { display: inline-block;
-	width: 100%
+	width: 90%
 }
-.list-group-item, button, .dropdown-menu { width: 90% }
+.list-group-item, button, .dropdown-menu { width: 100% }
 .dropdown-menu, .list-group-item {	background-color: var(--cinza) }
 .dropdown-menu, footer, #base-info, #sobremim { text-align: center }
 footer { margin-top: auto }
