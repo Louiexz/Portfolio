@@ -2,14 +2,13 @@
   --branco: #eee;
   --cinza: #aaa8a8;
   --preto: #222;
-  --ciano: #00f;
+  --ciano: #00f
 }
 body {
   margin: 0px;
   background-color: var(--preto);
   min-height: 100vh;
-  font-size: max(130%, 2vw);
-  overflow: hidden;
+  font-size: max(130%, 2vw)
 }
 body, #base-info, #sobremim {
   display: flex;
