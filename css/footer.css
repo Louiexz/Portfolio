@@ -1,0 +1,20 @@
+footer {
+    margin-top: auto;
+    padding: 10px
+}
+.icon {
+    max-width: 50px;
+    animation: cubicBezier 1s 3s both;
+}
+
+@keyframes cubicBezier {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.09);
+    }
+    100% {
+        transform: scale(1);
+    }  
+}

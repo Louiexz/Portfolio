@@ -1,0 +1,23 @@
+#me-img {
+  max-width: 180px;
+  border-radius: 45%;
+  border: 2px solid var(--preto);
+}
+#link-sobremim {
+  font-size: 18px;
+}
+#dev {
+  animation: slideText 2s 0.5s both;
+}
+
+@keyframes slideText {
+  from {
+    opacity: 0;
+    margin-top: 40%;
+    color: var(--ciano)
+  }
+  to {
+    opacity: 1;
+    margin-top: 0%;
+  }
+}

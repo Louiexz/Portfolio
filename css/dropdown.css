@@ -1,0 +1,12 @@
+#topico {
+    width: 90%;
+}
+#topico, .dropdown, .list-group-item {
+    margin: 30px 10%;
+  }
+.dropdown-menu, .list-group-item {
+    background-color: var(--cinza);
+}
+.dropdown-menu, .list-group-item, button {
+    width: 90%;
+}
