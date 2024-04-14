@@ -18,9 +18,9 @@ export class UteisFuncts {
         var img = document.getElementById("me-img");
 
         if (img.src.endsWith("2.jpg")) {
-            img.src = "../img/eu/foto1.jpg";
+            img.src = "./img/eu/foto1.jpg";
         } else {
-            img.src = "../img/eu/foto2.jpg";
+            img.src = "./img/eu/foto2.jpg";
         }
     }
 }
