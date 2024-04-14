@@ -7,7 +7,7 @@
 body {
   margin: 0px;
   background-color: var(--preto);
-  min-height: 110vh;
+  min-height: 100vh;
   font-size: max(130%, 2vw)
 }
 body, #base-info, #sobremim {
