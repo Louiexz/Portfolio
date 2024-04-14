@@ -13,8 +13,8 @@
 @keyframes slideText {
   from {
     opacity: 0;
-    margin-top: 40%;
-    color: var(--ciano)
+    margin-top: 60%;
+    color: var(--preto)
   }
   to {
     opacity: 1;
