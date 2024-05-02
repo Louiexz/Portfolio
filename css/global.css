@@ -5,32 +5,27 @@
 }
 :root {
   --branco: #eee;
-  --cinza: #aaa8a8;
+  --cinza: #888787;
   --preto: #222;
-  --ciano: #00f
+  --ciano: #00f;
 }
 body {
   background-color: var(--preto);
-  height: 100vh;
   font-size: max(120%, 2vw);
-  justify-content: space-between;
-}
-body, .navbar-item {
-  color: var(--cinza);
-}
-a:hover, .navbar-item-active, #link-sobremim {
-  color: var(--branco);
-}
-body, #base-info, #sobremim {
-  display: flex;
-  gap: 30px;
-}
-body, #sobremim {
   flex-direction: column;
 }
-#base-info {
-  align-items: center;
-  justify-content: center;
+body {
+  display: flex;
+}
+main, section {
+  min-height: 84vh;
+  padding-top: 90px;
+}
+body, .navbar-item {
+  color: var(--branco);
+}
+a:hover, .navbar-item-active, #link-sobremim {
+  color: var(--cinza);
 }
 #base-info, #sobremim, .dropdown-menu, footer {
   text-align: center;

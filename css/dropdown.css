@@ -1,12 +1,25 @@
-#topico {
+#projeto, .dropdown-menu, button {
     width: 90%;
 }
-#topico, .dropdown, .list-group-item {
+#projeto, .dropdown {
     margin: 30px 10%;
-  }
-.dropdown-menu, .list-group-item {
+}
+.dropdown-menu, .grid-cards, .card {
     background-color: var(--cinza);
 }
-.dropdown-menu, .list-group-item, button {
-    width: 90%;
+.grid-cards {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px
+}
+.card {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.card:hover {
+    transform: scale(1.03)
 }

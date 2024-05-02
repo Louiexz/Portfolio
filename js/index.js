@@ -9,6 +9,4 @@ if (window.location.pathname.includes('index.html')) {
 }*/
 
 // Atualiza idade na página sobre
-if (window.location.pathname.includes('about.html')) {
-    document.addEventListener("DOMContentLoaded", uteis.getYear)
-}
+document.addEventListener("DOMContentLoaded", uteis.getYear)

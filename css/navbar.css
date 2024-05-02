@@ -1,4 +1,9 @@
 .navbar {
+    background-color: #000;
+    position: fixed;
+    opacity: 0.5;
     height: 10%;
+    width: 100%;
     justify-content: space-evenly;
+    z-index: 99;
 }
