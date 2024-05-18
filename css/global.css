@@ -10,7 +10,9 @@
   --ciano: #00f;
 }
 body {
+  background-image: url('../img/binario2.jpg');
   background-color: var(--preto);
+  object-fit: cover;
   font-size: max(120%, 2vw);
   flex-direction: column;
 }
@@ -21,18 +23,16 @@ main, section {
   min-height: 84vh;
   padding-top: 90px;
 }
-body, .navbar-item {
+body, .navbar-item-active, .navbar-item:hover {
   color: var(--branco);
-}
-a:hover, .navbar-item-active, #link-sobremim {
-  color: var(--cinza);
 }
 #base-info, #sobremim, .dropdown-menu, footer {
   text-align: center;
 }
+a {
+  color: var(--cinza);
+  text-decoration: none;
+}
 h1 {
   font-size: 180%;
-}
-a {
-  text-decoration: none;
 }
