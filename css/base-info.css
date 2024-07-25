@@ -12,6 +12,16 @@
   animation: showText 2s 0.5s both;
   text-shadow: rgba(0, 153, 255, 0.747) 1px 0 5px;
 }
+#ferramentas {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  img {
+    padding: 5px;
+    height: 50px;
+  }
+}
 #caixa {
   width: 10%;
   position:sticky;
