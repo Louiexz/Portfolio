@@ -1,0 +1,10 @@
+#sobremim {
+    padding-top: 25dvh;
+    a:hover, span { color: whitesmoke; }
+}
+#sobremim-textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 25px;
+}

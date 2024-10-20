@@ -8,9 +8,6 @@
         <link rel="icon" type="image/png" href="img/robo.png">
         <link rel="stylesheet" href="./css/style.css">
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <title>Luiz Augusto - Portfólio</title>
     </head>
     
@@ -26,125 +23,104 @@
           <img src="./img/eu/foto1.png" id=me-img>
           <div id=textos>
             <h1 id="dev">Sou Desenvolvedor</h1>
-            <h4 id="nome">Me chamo Luiz Augusto</h4>
+            <h3 id="nome">Bem-vindos, me chamo Luiz</h3>
+            
             <span id="ferramentas">
-              <img src="img/icon/joystick.png"> Games,
-              <img src="img/icon/lua.png"> Lua,
-              <img src="img/icon/python.png"> Python,
-              <img src="img/icon/html.png"> Frontend e
-              <img src="img/icon/java.png"> Java.
-            </div>
-        <h2 id="caixa"></h2></span>
+                <img src="img/icon/python.png">
+                <img src="img/icon/flask.png">
+                <img src="https://static.djangoproject.com/img/logos/django-logo-negative.png">
+                <img src="img/icon/nodejsLight.svg">
+                <img src="img/icon/react-logo.png">
+                <img src="img/icon/html.png">
+                <img src="img/icon/css-3.png">
+                <img src="img/icon/js.png">
+                <img src="img/icon/lua.png">
+                <img src="img/icon/java.png">
+            </span>
+            <h2 id="caixa"></h2>
+        </div>
         </main>
         <hr>
         <section id="projeto">
             <h2>Projetos:</h2>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="pythonDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="img/icon/joystick.png" width="30px"> Games
-                </button>
-                <div class="dropdown-menu" aria-labelledby="pythonDropdown">
-                    <div class="grid-cards">
-                      <div class="card">
+            <div class="sub-section">
+                <h3>FullStack</h3>
+                <div class="grid-cards">
+                    <div class="card"></div>
+                    <div class="card" id="financial-manager">
+                        <b>Simple Finance - Financial Manager</b>
+                        <span>Developed in: Python, Django + Bootstrap + SQL</span>
+                    </div>
+                    <div class="card"></div>
+                </div>
+            </div>
+            <div class="sub-section">
+                <h3>Front-end</h3>
+                <div class="grid-cards">
+                    <div class="card" id="e-commence">
+                        <b>E-commence</b>
+                        <div>
+                            <a href="https://louiexz.github.io/E-commence">
+                                <img class="icon www" src="img/icon/www.png"></a>
+                        </div>
+                        <span>Developed in: HTML, CSS, JavaScript</span>
+                    </div>
+                    <div class="card" id="diario-interativo">
+                        <b>Diário interativo</b>
+                        <div>
+                            <a href="https://louiexz.github.io/DiarioInterativo">
+                                <img class="icon www" src="img/icon/www.png"></a>
+                        </div>
+                        <span>Developed in: HTML, CSS, JavaScript</span>
+                    </div>
+                    <div class="card" id="chat-anonimo">
+                        <b>Chat anônimo</b>
+                        <div>
+                            <a href="https://site-flask-lake.vercel.app/">
+                                <img class="icon www" src="img/icon/www.png"></a>
+                        </div>
+                        <span>Developed in: Python, Flask + Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-section">
+                <h3>Back-end</h3>
+                <div class="grid-cards">
+                    <div class="card" id="landing-aura">
+                        <b>Backend - Landing Page Aura</b>
+                        <span>Developed in: JavaScript, NodeJS</span>
+                    </div>
+                    <div class="card" id="agenda-contatos">
+                        <b>Agenda de contatos</b>
+                        <span>Developed in: Java</span>
+                    </div>
+                    <div class="card"></div>
+                </div>
+            </div>
+            <div class="sub-section">
+                <h3>Games</h3>
+                <div class="grid-cards">
+                    <div class="card" id="invasao-alienigena">
                         <b>Invasão alienígena</b>
-                        <a href="https://github.com/Louiexz/InvasaoAlien-Pygame">
-                            <img class="icon github" src="img/icon/github-mark.png"></a>
-                        <text>Developed in: Python, Pygame</text>
-                      </div>
-                      <div class="card">
+                        <span>Developed in: Python, Pygame</span>
+                    </div>
+                    <div class="card" id="apocalipse-zumbi">
                         <b>Apocalipse Zumbi</b>
-                        <a href="https://github.com/Louiexz/ZombieApocalypse">
-                            <img class="icon github" src="img/icon/github-mark.png"></a>
-                        <text>Developed in: Python, Pygame</text>
-                      </div>
-                      <div class="card">
+                        <span>Developed in: Python, Pygame</span>
+                    </div>
+                    <div class="card" id="killeropil-escape">
                         <b>KillerOpil-Escape</b>
                         <a href="https://louiexz.github.io/KillerOpil-Escape/">
                             <img class="icon www" src="img/icon/www.png"></a>
-                        <text>Developed in: Lua, Solar2d</text>
-                      </div>
-                    </div> 
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="pythonDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="img/icon/python.png" width="30px"> Python
-                </button>
-                <div class="dropdown-menu" aria-labelledby="pythonDropdown">
-                    <div class="grid-cards">
-                        <div class="card">
-                            <b>Alerta furto</b>
-                            <a href=https://github.com/Louiexz/LoginKivy>
-                            <img class="icon github" src="img/icon/github-mark.png"></a>
-                        </div>
-                        <div class="card">
-                            <b>Calculadora</b>
-                            <a href=https://github.com/Louiexz/Calculadora-Kivy>
-                            <img class="icon github" src="img/icon/github-mark.png"></a>
-                        </div>
-                        <div class="card">
-                            <b>Piano</b>
-                            <a href=https://github.com/Louiexz/PianoSons-Kivy>
-                            <img class="icon github" src="img/icon/github-mark.png"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>       
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="javaDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="img/icon/java.png" width="40px"> Java
-                </button>
-                <div class="dropdown-menu" aria-labelledby="javaDropdown">
-                    <div class="grid-cards">
-                        <div class="card">
-                            <b>Agenda de contatos</b>
-                            <a href="https://github.com/Louiexz/Agenda-De-Contatos/">
-                                <img class="icon github" src="img/icon/github-mark.png"></a>
-                        </div>
+                        <span>Developed in: Lua, Solar2d</span>
                     </div>
                 </div>
             </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="websitesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="img/icon/html.png" width="40px"> Websites
-                </button>
-                <div class="dropdown-menu" aria-labelledby="websitesDropdown">
-                    <div class="grid-cards">
-                        <div class="card">
-                            <b>E-commence</b>
-                            <div>
-                            <a href="https://github.com/Louiexz/E-commence/">
-                                <img class="icon github" src="img/icon/github-mark.png"></a>
-                            <a href="https://louiexz.github.io/E-commence">
-                                <img class="icon www" src="img/icon/www.png"></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <b>Diário interativo</b>
-                            <div>
-                            <a href="https://github.com/Louiexz/DiarioInterativo/">
-                                <img class="icon github" src="img/icon/github-mark.png"></a>
-                            <a href="https://louiexz.github.io/DiarioInterativo">
-                                <img class="icon www" src="img/icon/www.png"></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <b>Chat anônimo</b>
-                            <div>
-                            <a href="https://github.com/Louiexz/Site-Flask">
-                                <img class="icon github" src="img/icon/github-mark.png"></a>
-                            <a href="https://site-flask-lake.vercel.app/">
-                                <img class="icon www" src="img/icon/www.png"></a>
-                            </div>
-                            <text>Developed in: Python, Flask</text>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h6>Obs: Todos os repositorios estão no meu github.</h6>
       </section>
       <hr>
       <footer id="contato">
-        <h3>Contato:</h3>
+        <h3>Entre em contato por:</h3>
         <a href="https://www.linkedin.com/in/lux-lima">
           <img class="icon linke" src="img/icon/linkedin-icon.png"></a>
         <a href="https://instagram.com/le_luiz_?igshid=MzRlODBiNWFlZA==>">
@@ -152,5 +128,9 @@
         <a href="https://github.com/Louiexz">
           <img class="icon github" src="img/icon/github-mark.png"></a>
       </footer>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script defer type="module" src=js/index.js></script>
     </body>
 </html>

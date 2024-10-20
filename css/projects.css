@@ -1,0 +1,80 @@
+#projeto, button {
+    z-index: 2;
+    gap: 50px;
+    padding: 5%
+}
+.sub-section {
+    border: 0.1px solid gray;
+    padding: 10px;
+}
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.back-card, .card {
+    background-color: var(--cinza);
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.6s ease;
+
+    span {
+        font-size: 80%;
+    }
+    .back-card-img {
+        max-width: 100%;
+        object-fit: contain;
+    }
+    .back-button {
+        position: relative;
+        float: right;
+        z-index: 90;
+        padding: 5px;
+        font-size: 16px;
+    }
+}
+.showCard {
+    position: absolute;
+    left: 12dvw;
+
+    width: 80%;
+    max-height: 80dvh;
+    z-index: 99
+}
+.rotateCard{
+    animation: rotateCard 0.5s forwards;
+}
+.hidden-card {
+    display: none;
+}
+@keyframes rotateCard {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(90deg);
+    }
+}
+
+@media (max-width:600px) {
+    .grid-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .showCard {
+        left: 2.5%;
+        width: 95%;
+        min-height: 90dvh;
+        z-index: 99
+    }
+}
+.grid-cards:hover > :not(:hover) {
+    opacity: 0.4;
+}
+.disabled {
+    pointer-events: none;
+    cursor: pointer;
+}
